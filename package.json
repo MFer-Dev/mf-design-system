@@ -1,0 +1,33 @@
+{
+  "name": "@matterforma/design-system",
+  "version": "1.0.0",
+  "description": "Matterforma Design System - Comprehensive design tokens and components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "design-system",
+    "matterforma",
+    "tokens",
+    "components",
+    "tailwind"
+  ],
+  "author": "Matterforma",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "tailwind/**/*",
+    "tokens/**/*"
+  ]
+}

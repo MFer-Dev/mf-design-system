@@ -1,0 +1,111 @@
+/* Matterforma Design System - CSS Variables */
+/* Dark Spectral Color System v1.0 */
+
+:root[data-theme="mf-dark"] {
+  /* Backgrounds */
+  --mf-bg-page: #1A1523; /* graphite-900 */
+  --mf-bg-surface-1: #221B2E; /* graphite-800 */
+  --mf-bg-surface-2: #2B2239; /* graphite-700 */
+  --mf-bg-elevated: #2B2239; /* + alpha overlay in code */
+  --mf-bg-hover: rgba(255,255,255,.08);
+  --mf-bg-selected: rgba(255,255,255,.12);
+  --mf-bg-scrim: rgba(0,0,0,.20);
+
+  /* Text */
+  --mf-text-primary: #F5F5F7;
+  --mf-text-secondary: #C8C8CC;
+  --mf-text-tertiary: #A9A9B0;
+  --mf-text-disabled: #7A7A82;
+  --mf-text-on-accent: #0E0B12;
+
+  /* Borders */
+  --mf-border-subtle: #342A45; /* graphite-600 */
+  --mf-border: #413455; /* graphite-500 */
+  --mf-border-strong: #4E4064; /* graphite-400 */
+  --mf-border-accent: rgba(157,108,255,.24);
+
+  /* Accents */
+  --mf-accent-brand: #6E3CBC; /* violet-700 */
+  --mf-accent-brand-hover: #9D6CFF; /* violet-500 */
+  --mf-accent-success: #00A676; /* teal-600 */
+  --mf-accent-success-weak: #4FE0B0; /* teal-400 */
+  --mf-accent-info: #2C6FFF; /* indigo-600 */
+  --mf-accent-info-weak: #7DA9FF; /* indigo-400 */
+  --mf-accent-warning: #FFB347; /* amber-500 */
+  --mf-accent-warning-weak: #FFD580; /* amber-400 */
+  --mf-accent-danger: #C65B6A; /* rose-600 */
+  --mf-accent-danger-weak: #E59AA6; /* rose-500 */
+
+  /* Focus & Selection */
+  --mf-focus-ring: rgba(157,108,255,.25);
+  --mf-focus-inner: rgba(255,255,255,.12);
+  --mf-selection: rgba(157,108,255,.24);
+
+  /* Data viz */
+  --mf-chart-1: #9D6CFF;
+  --mf-chart-2: #2FC89A;
+  --mf-chart-3: #5C8DFF;
+  --mf-chart-4: #FFB347;
+  --mf-chart-5: #E59AA6;
+  --mf-chart-6: #B99CFF;
+  --mf-chart-7: #4FE0B0;
+  --mf-chart-8: #7DA9FF;
+
+  /* Gradients */
+  --mf-gradient-hero: linear-gradient(180deg, #6E3CBC 0%, #2C6FFF 100%);
+  
+  /* Glows */
+  --mf-glow-brand: 0 0 20px rgba(157,108,255,.25);
+  --mf-glow-success: 0 0 20px rgba(47,200,154,.22);
+}
+
+/* Fallback for when theme is not set */
+:root {
+  /* Default to dark theme */
+  --mf-bg-page: #1A1523;
+  --mf-bg-surface-1: #221B2E;
+  --mf-bg-surface-2: #2B2239;
+  --mf-bg-elevated: #2B2239;
+  --mf-bg-hover: rgba(255,255,255,.08);
+  --mf-bg-selected: rgba(255,255,255,.12);
+  --mf-bg-scrim: rgba(0,0,0,.20);
+
+  --mf-text-primary: #F5F5F7;
+  --mf-text-secondary: #C8C8CC;
+  --mf-text-tertiary: #A9A9B0;
+  --mf-text-disabled: #7A7A82;
+  --mf-text-on-accent: #0E0B12;
+
+  --mf-border-subtle: #342A45;
+  --mf-border: #413455;
+  --mf-border-strong: #4E4064;
+  --mf-border-accent: rgba(157,108,255,.24);
+
+  --mf-accent-brand: #6E3CBC;
+  --mf-accent-brand-hover: #9D6CFF;
+  --mf-accent-success: #00A676;
+  --mf-accent-success-weak: #4FE0B0;
+  --mf-accent-info: #2C6FFF;
+  --mf-accent-info-weak: #7DA9FF;
+  --mf-accent-warning: #FFB347;
+  --mf-accent-warning-weak: #FFD580;
+  --mf-accent-danger: #C65B6A;
+  --mf-accent-danger-weak: #E59AA6;
+
+  --mf-focus-ring: rgba(157,108,255,.25);
+  --mf-focus-inner: rgba(255,255,255,.12);
+  --mf-selection: rgba(157,108,255,.24);
+
+  --mf-chart-1: #9D6CFF;
+  --mf-chart-2: #2FC89A;
+  --mf-chart-3: #5C8DFF;
+  --mf-chart-4: #FFB347;
+  --mf-chart-5: #E59AA6;
+  --mf-chart-6: #B99CFF;
+  --mf-chart-7: #4FE0B0;
+  --mf-chart-8: #7DA9FF;
+
+  --mf-gradient-hero: linear-gradient(180deg, #6E3CBC 0%, #2C6FFF 100%);
+  --mf-glow-brand: 0 0 20px rgba(157,108,255,.25);
+  --mf-glow-success: 0 0 20px rgba(47,200,154,.22);
+}
