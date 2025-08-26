@@ -1,65 +1,95 @@
 // Matterforma Design System - Main Export
-// Dark Spectral Color System v1.0
+// Railway-Style Dark Spectral Color System v2.0
 
 export * from './tokens/colors';
-export { default as semanticColors } from './tokens/colors';
 
 // Re-export commonly used values
 export const designTokens = {
   colors: {
     bg: {
-      page: '#1A1523',
-      surface1: '#221B2E',
-      surface2: '#2B2239',
-      elevated: '#2B2239',
-      hover: 'rgba(255,255,255,.08)',
-      selected: 'rgba(255,255,255,.12)',
+      page: '#0e1116',
+      surface1: '#0e0e0e',
+      surface2: '#1a1d23',
+      surface3: '#2a2a2a',
+      elevated: '#2a2a2a',
+      hover: 'rgba(255,255,255,.05)',
+      selected: 'rgba(255,255,255,.08)',
+      active: 'rgba(255,255,255,.12)',
+      focus: 'rgba(255,255,255,.16)',
       scrim: 'rgba(0,0,0,.20)',
+      strongScrim: 'rgba(0,0,0,.40)',
     },
     text: {
-      primary: '#F5F5F7',
-      secondary: '#C8C8CC',
-      tertiary: '#A9A9B0',
-      disabled: '#7A7A82',
-      onAccent: '#0E0B12',
+      primary: '#FFFFFF',
+      secondary: '#CCCCCC',
+      tertiary: '#999999',
+      quaternary: '#666666',
+      disabled: '#666666',
+      onAccent: '#0A0A0A',
+      inverse: '#0A0A0A',
     },
     border: {
-      subtle: '#342A45',
-      default: '#413455',
-      strong: '#4E4064',
-      accent: 'rgba(157,108,255,.24)',
+      subtle: '#3e444c',
+      default: '#555555',
+      strong: '#666666',
+      accent: 'rgba(139,92,246,.20)',
+      focus: 'rgba(139,92,246,.30)',
+      success: 'rgba(16,185,129,.20)',
+      warning: 'rgba(245,158,11,.20)',
+      error: 'rgba(239,68,68,.20)',
     },
     accent: {
-      brand: '#6E3CBC',
-      brandHover: '#9D6CFF',
-      success: '#00A676',
+      brand: '#8B5CF6',
+      brandHover: '#7E52CF',
+      brandActive: '#6E3CBC',
+      brandLight: '#A78BFA',
+      brandDark: '#5B21B6',
+      success: '#10B981',
+      successHover: '#2FC89A',
       successWeak: '#4FE0B0',
-      info: '#2C6FFF',
+      info: '#3B82F6',
+      infoHover: '#5C8DFF',
       infoWeak: '#7DA9FF',
-      warning: '#FFB347',
+      warning: '#F59E0B',
+      warningHover: '#FFB347',
       warningWeak: '#FFD580',
-      danger: '#C65B6A',
-      dangerWeak: '#E59AA6',
+      danger: '#EF4444',
+      dangerHover: '#E59AA6',
+      dangerWeak: '#F2C1C8',
     },
     focus: {
-      ring: 'rgba(157,108,255,.25)',
+      ring: 'rgba(139,92,246,.30)',
       inner: 'rgba(255,255,255,.12)',
-      selection: 'rgba(157,108,255,.24)',
+      selection: 'rgba(139,92,246,.20)',
+    },
+    interactive: {
+      hover: 'rgba(255,255,255,.05)',
+      active: 'rgba(255,255,255,.08)',
+      selected: 'rgba(139,92,246,.20)',
+      focus: 'rgba(139,92,246,.30)',
     },
     chart: {
-      1: '#9D6CFF',
+      1: '#8B5CF6',
       2: '#2FC89A',
       3: '#5C8DFF',
       4: '#FFB347',
       5: '#E59AA6',
-      6: '#B99CFF',
+      6: '#A78BFA',
       7: '#4FE0B0',
       8: '#7DA9FF',
     },
   },
   
-  // Spacing scale (8px base)
+  // Railway-style spacing scale
   spacing: {
+    'railway-xs': '0.125rem',
+    'railway-sm': '0.25rem',
+    'railway-md': '0.5rem',
+    'railway-lg': '1rem',
+    'railway-xl': '1.5rem',
+    'railway-2xl': '2rem',
+    'railway-3xl': '3rem',
+    // Legacy spacing (8px base)
     0: '0px',
     1: '4px',
     2: '8px',
@@ -109,8 +139,15 @@ export const designTokens = {
     },
   },
   
-  // Border radius
+  // Railway-style border radius
   borderRadius: {
+    'railway-sm': '0.25rem',
+    'railway-md': '0.375rem',
+    'railway-lg': '0.5rem',
+    'railway-xl': '0.75rem',
+    'railway-2xl': '1rem',
+    'railway-full': '9999px',
+    // Legacy border radius
     none: '0px',
     sm: '2px',
     base: '4px',
@@ -122,8 +159,15 @@ export const designTokens = {
     full: '9999px',
   },
   
-  // Shadows
+  // Railway-style shadows
   shadows: {
+    'railway-sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    'railway-md': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+    'railway-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+    'railway-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+    'railway-inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+    'railway-elevated': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+    // Legacy shadows
     sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
     base: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
     md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
@@ -134,8 +178,12 @@ export const designTokens = {
     none: 'none',
   },
   
-  // Transitions
+  // Railway-style transitions
   transitions: {
+    'railway-fast': '150ms ease-in-out',
+    'railway-normal': '250ms ease-in-out',
+    'railway-slow': '350ms ease-in-out',
+    // Legacy transitions
     fast: '150ms ease-in-out',
     base: '200ms ease-in-out',
     slow: '300ms ease-in-out',
