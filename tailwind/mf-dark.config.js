@@ -259,25 +259,8 @@ module.exports = {
           backgroundColor: theme('colors.bg.focus'),
         },
         
-        // Text utilities
-        '.text-primary': {
-          color: theme('colors.text.primary'),
-        },
-        '.text-secondary': {
-          color: theme('colors.text.secondary'),
-        },
-        '.text-tertiary': {
-          color: theme('colors.text.tertiary'),
-        },
-        '.text-quaternary': {
-          color: theme('colors.text.quaternary'),
-        },
-        '.text-on-accent': {
-          color: theme('colors.text.onAccent'),
-        },
-        '.text-inverse': {
-          color: theme('colors.text.inverse'),
-        },
+        // Text utilities - REMOVED hardcoded overrides
+        // These should use Tailwind's color system instead
         
         // Border utilities
         '.border-subtle': {
@@ -329,23 +312,6 @@ module.exports = {
             borderColor: theme('colors.border.accent'),
             boxShadow: theme('boxShadow.elevated'),
             transform: 'translateY(-1px)',
-          },
-        },
-        '.button': {
-          backgroundColor: theme('colors.accent.brand'),
-          color: theme('colors.text.onAccent'),
-          border: 'none',
-          borderRadius: theme('borderRadius.md'),
-          padding: `${theme('spacing.md')} ${theme('spacing.lg')}`,
-          fontWeight: '500',
-          transition: `all ${theme('transitionDuration.fast')} ease-in-out`,
-          cursor: 'pointer',
-        },
-        '.button-hover': {
-          '&:hover': {
-            backgroundColor: theme('colors.accent.brandHover'),
-            transform: 'translateY(-1px)',
-            boxShadow: theme('boxShadow.md'),
           },
         },
       };
