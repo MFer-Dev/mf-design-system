@@ -1,14 +1,14 @@
 // Matterforma Design System - Tailwind Configuration
-// Railway-Style Dark Spectral Color System v2.0
+// Enhanced Dark Spectral Color System v2.0
 
-const { semanticColors } = require('../tokens/colors');
+const { semanticColors } = require('../dist/tokens/colors');
 
 module.exports = {
   darkMode: ['class', '[data-theme="mf-dark"]'],
   theme: {
     extend: {
       colors: {
-        // Backgrounds & Surfaces (Railway-style)
+        // Backgrounds & Surfaces
         bg: {
           page: semanticColors.bg.page,
           surface1: semanticColors.bg.surface1,
@@ -23,7 +23,7 @@ module.exports = {
           strongScrim: semanticColors.bg.strongScrim,
         },
         
-        // Text (Railway-style)
+        // Text
         text: {
           primary: semanticColors.text.primary,
           secondary: semanticColors.text.secondary,
@@ -34,7 +34,7 @@ module.exports = {
           inverse: semanticColors.text.inverse,
         },
         
-        // Borders & Dividers (Railway-style)
+        // Borders & Dividers
         border: {
           subtle: semanticColors.border.subtle,
           DEFAULT: semanticColors.border.default,
@@ -46,7 +46,7 @@ module.exports = {
           error: semanticColors.border.error,
         },
         
-        // Brand & Accents (Railway-style)
+        // Brand & Accents
         accent: {
           brand: semanticColors.accent.brand,
           brandHover: semanticColors.accent.brandHover,
@@ -67,14 +67,14 @@ module.exports = {
           dangerWeak: semanticColors.accent.dangerWeak,
         },
         
-        // Focus & Selection (Railway-style)
+        // Focus & Selection
         focus: {
           ring: semanticColors.focus.ring,
           inner: semanticColors.focus.inner,
           selection: semanticColors.focus.selection,
         },
         
-        // Interactive States (Railway-style)
+        // Interactive States
         interactive: {
           hover: semanticColors.interactive.hover,
           active: semanticColors.interactive.active,
@@ -82,7 +82,7 @@ module.exports = {
           focus: semanticColors.interactive.focus,
         },
         
-        // Data Visualization (Railway-style)
+        // Data Visualization
         chart: {
           1: semanticColors.chart[1],
           2: semanticColors.chart[2],
@@ -143,7 +143,7 @@ module.exports = {
         },
       },
       
-      // Ring colors for focus states (Railway-style)
+      // Ring colors for focus states
       ringColor: {
         DEFAULT: semanticColors.focus.ring,
         success: semanticColors.border.success,
@@ -151,7 +151,7 @@ module.exports = {
         error: semanticColors.border.error,
       },
       
-      // Outline colors for focus states (Railway-style)
+      // Outline colors for focus states
       outlineColor: {
         DEFAULT: semanticColors.focus.ring,
         success: semanticColors.border.success,
@@ -159,7 +159,7 @@ module.exports = {
         error: semanticColors.border.error,
       },
       
-      // Background opacity utilities (Railway-style)
+      // Background opacity utilities
       backgroundColor: {
         'alpha-white-05': 'rgba(255,255,255,.05)',
         'alpha-white-08': 'rgba(255,255,255,.08)',
@@ -174,7 +174,7 @@ module.exports = {
         'alpha-rose-20': 'rgba(239,68,68,.20)',
       },
       
-      // Border opacity utilities (Railway-style)
+      // Border opacity utilities
       borderColor: {
         'alpha-white-05': 'rgba(255,255,255,.05)',
         'alpha-white-08': 'rgba(255,255,255,.08)',
@@ -182,7 +182,7 @@ module.exports = {
         'alpha-white-16': 'rgba(255,255,255,.16)',
       },
       
-      // Text opacity utilities (Railway-style)
+      // Text opacity utilities
       textColor: {
         'alpha-white-05': 'rgba(255,255,255,.05)',
         'alpha-white-08': 'rgba(255,255,255,.08)',
@@ -190,50 +190,50 @@ module.exports = {
         'alpha-white-16': 'rgba(255,255,255,.16)',
       },
       
-      // Railway-style spacing and sizing
+      // Enhanced spacing and sizing
       spacing: {
-        'railway-xs': '0.125rem',
-        'railway-sm': '0.25rem',
-        'railway-md': '0.5rem',
-        'railway-lg': '1rem',
-        'railway-xl': '1.5rem',
-        'railway-2xl': '2rem',
-        'railway-3xl': '3rem',
+        'xs': '0.125rem',
+        'sm': '0.25rem',
+        'md': '0.5rem',
+        'lg': '1rem',
+        'xl': '1.5rem',
+        '2xl': '2rem',
+        '3xl': '3rem',
       },
       
-      // Railway-style shadows
+      // Enhanced shadows
       boxShadow: {
-        'railway-sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-        'railway-md': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-        'railway-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-        'railway-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-        'railway-inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-        'railway-elevated': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+        'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+        'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+        'inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+        'elevated': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
       },
       
-      // Railway-style transitions
+      // Enhanced transitions
       transitionDuration: {
-        'railway-fast': '150ms',
-        'railway-normal': '250ms',
-        'railway-slow': '350ms',
+        'fast': '150ms',
+        'normal': '250ms',
+        'slow': '350ms',
       },
       
-      // Railway-style border radius
+      // Enhanced border radius
       borderRadius: {
-        'railway-sm': '0.25rem',
-        'railway-md': '0.375rem',
-        'railway-lg': '0.5rem',
-        'railway-xl': '0.75rem',
-        'railway-2xl': '1rem',
-        'railway-full': '9999px',
+        'sm': '0.25rem',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'xl': '0.75rem',
+        '2xl': '1rem',
+        'full': '9999px',
       },
     },
   },
   plugins: [
-    // Custom plugin for Railway-style semantic utilities
+    // Custom plugin for enhanced semantic utilities
     function({ addUtilities, theme }) {
       const newUtilities = {
-        // Background utilities (Railway-style)
+        // Background utilities
         '.bg-surface-1': {
           backgroundColor: theme('colors.bg.surface1'),
         },
@@ -259,7 +259,7 @@ module.exports = {
           backgroundColor: theme('colors.bg.focus'),
         },
         
-        // Text utilities (Railway-style)
+        // Text utilities
         '.text-primary': {
           color: theme('colors.text.primary'),
         },
@@ -279,7 +279,7 @@ module.exports = {
           color: theme('colors.text.inverse'),
         },
         
-        // Border utilities (Railway-style)
+        // Border utilities
         '.border-subtle': {
           borderColor: theme('colors.border.subtle'),
         },
@@ -302,7 +302,7 @@ module.exports = {
           borderColor: theme('colors.border.error'),
         },
         
-        // Interactive utilities (Railway-style)
+        // Interactive utilities
         '.hover\\:bg-hover:hover': {
           backgroundColor: theme('colors.interactive.hover'),
         },
@@ -316,36 +316,36 @@ module.exports = {
           backgroundColor: theme('colors.interactive.selected'),
         },
         
-        // Railway-style component utilities
-        '.railway-card': {
+        // Enhanced component utilities
+        '.card': {
           backgroundColor: theme('colors.bg.surface1'),
           border: `1px solid ${theme('colors.border.subtle')}`,
-          borderRadius: theme('borderRadius.railway-lg'),
-          boxShadow: theme('boxShadow.railway-sm'),
-          transition: `all ${theme('transitionDuration.railway-normal')} ease-in-out`,
+          borderRadius: theme('borderRadius.lg'),
+          boxShadow: theme('boxShadow.sm'),
+          transition: `all ${theme('transitionDuration.normal')} ease-in-out`,
         },
-        '.railway-card-hover': {
+        '.card-hover': {
           '&:hover': {
             borderColor: theme('colors.border.accent'),
-            boxShadow: theme('boxShadow.railway-elevated'),
+            boxShadow: theme('boxShadow.elevated'),
             transform: 'translateY(-1px)',
           },
         },
-        '.railway-button': {
+        '.button': {
           backgroundColor: theme('colors.accent.brand'),
           color: theme('colors.text.onAccent'),
           border: 'none',
-          borderRadius: theme('borderRadius.railway-md'),
-          padding: `${theme('spacing.railway-md')} ${theme('spacing.railway-lg')}`,
+          borderRadius: theme('borderRadius.md'),
+          padding: `${theme('spacing.md')} ${theme('spacing.lg')}`,
           fontWeight: '500',
-          transition: `all ${theme('transitionDuration.railway-fast')} ease-in-out`,
+          transition: `all ${theme('transitionDuration.fast')} ease-in-out`,
           cursor: 'pointer',
         },
-        '.railway-button-hover': {
+        '.button-hover': {
           '&:hover': {
             backgroundColor: theme('colors.accent.brandHover'),
             transform: 'translateY(-1px)',
-            boxShadow: theme('boxShadow.railway-md'),
+            boxShadow: theme('boxShadow.md'),
           },
         },
       };
