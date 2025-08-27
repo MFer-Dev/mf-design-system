@@ -1,5 +1,5 @@
 // Matterforma Design System - Tailwind Configuration
-// Enhanced Dark Spectral Color System v2.0
+// Enhanced Dark Spectral Color System v2.0 with Railway-style State Strategy
 
 const { semanticColors } = require('../dist/tokens/colors');
 
@@ -8,7 +8,28 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Backgrounds & Surfaces
+        // Railway-style semantic backgrounds (container strategy)
+        background: semanticColors.bg.background,           // Main page background
+        secondaryBg: semanticColors.bg.secondaryBg,         // Primary containers
+        tertiaryBg: semanticColors.bg.tertiaryBg,           // Nested panels
+        gray: {
+          50: semanticColors.bg.hover,                      // Hover states
+          100: semanticColors.bg.hover,                     // Hover backgrounds
+          200: semanticColors.border.gray100,               // Hover borders
+          600: semanticColors.text.muted,                   // Muted text
+        },
+        
+        // Railway-style semantic text
+        foreground: semanticColors.text.primary,            // Main text
+        muted: semanticColors.text.muted,                   // Secondary text
+        
+        // Railway-style semantic borders
+        pink: {
+          400: semanticColors.border.pink400,               // Focus borders
+          700: semanticColors.accent.pink700,               // Focus rings
+        },
+        
+        // Backgrounds & Surfaces (existing)
         bg: {
           page: semanticColors.bg.page,
           surface1: semanticColors.bg.surface1,
@@ -23,7 +44,7 @@ module.exports = {
           strongScrim: semanticColors.bg.strongScrim,
         },
         
-        // Text
+        // Text (existing)
         text: {
           primary: semanticColors.text.primary,
           secondary: semanticColors.text.secondary,
@@ -32,9 +53,11 @@ module.exports = {
           disabled: semanticColors.text.disabled,
           onAccent: semanticColors.text.onAccent,
           inverse: semanticColors.text.inverse,
+          success: semanticColors.text.success,
+          muted: semanticColors.text.muted,
         },
         
-        // Borders & Dividers
+        // Borders & Dividers (existing)
         border: {
           subtle: semanticColors.border.subtle,
           DEFAULT: semanticColors.border.default,
@@ -44,9 +67,11 @@ module.exports = {
           success: semanticColors.border.success,
           warning: semanticColors.border.warning,
           error: semanticColors.border.error,
+          gray100: semanticColors.border.gray100,
+          pink400: semanticColors.border.pink400,
         },
         
-        // Brand & Accents
+        // Brand & Accents (existing)
         accent: {
           brand: semanticColors.accent.brand,
           brandHover: semanticColors.accent.brandHover,
@@ -65,24 +90,28 @@ module.exports = {
           danger: semanticColors.accent.danger,
           dangerHover: semanticColors.accent.dangerHover,
           dangerWeak: semanticColors.accent.dangerWeak,
+          pink700: semanticColors.accent.pink700,
         },
         
-        // Focus & Selection
+        // Focus & Selection (existing)
         focus: {
           ring: semanticColors.focus.ring,
           inner: semanticColors.focus.inner,
           selection: semanticColors.focus.selection,
+          visible: semanticColors.focus.visible,
         },
         
-        // Interactive States
+        // Interactive States (existing)
         interactive: {
           hover: semanticColors.interactive.hover,
           active: semanticColors.interactive.active,
           selected: semanticColors.interactive.selected,
           focus: semanticColors.interactive.focus,
+          hoverBg: semanticColors.interactive.hoverBg,
+          hoverDark: semanticColors.interactive.hoverDark,
         },
         
-        // Data Visualization
+        // Data Visualization (existing)
         chart: {
           1: semanticColors.chart[1],
           2: semanticColors.chart[2],
@@ -143,12 +172,14 @@ module.exports = {
         },
       },
       
-      // Ring colors for focus states
+      // Ring colors for focus states (Railway-style)
       ringColor: {
         DEFAULT: semanticColors.focus.ring,
         success: semanticColors.border.success,
         warning: semanticColors.border.warning,
         error: semanticColors.border.error,
+        pink: semanticColors.accent.pink700,                 // Railway focus ring
+        gray: semanticColors.border.gray100,                 // Railway gray focus
       },
       
       // Outline colors for focus states
@@ -216,6 +247,7 @@ module.exports = {
         'fast': '150ms',
         'normal': '250ms',
         'slow': '350ms',
+        '50': '50ms',                                        // Railway-style fast transitions
       },
       
       // Enhanced border radius
@@ -227,13 +259,49 @@ module.exports = {
         '2xl': '1rem',
         'full': '9999px',
       },
+      
+      // Railway-style transform scales
+      scale: {
+        '95': '0.95',                                        // active:scale-95
+        '98': '0.98',                                        // subtle scale
+      },
     },
   },
   plugins: [
-    // Custom plugin for enhanced semantic utilities
+    // Custom plugin for Railway-style semantic utilities and state strategies
     function({ addUtilities, theme }) {
       const newUtilities = {
-        // Background utilities
+        // Railway-style semantic backgrounds (container strategy)
+        '.bg-background': {
+          backgroundColor: theme('colors.background'),
+        },
+        '.bg-secondaryBg': {
+          backgroundColor: theme('colors.secondaryBg'),
+        },
+        '.bg-tertiaryBg': {
+          backgroundColor: theme('colors.tertiaryBg'),
+        },
+        
+        // Railway-style semantic text
+        '.text-foreground': {
+          color: theme('colors.foreground'),
+        },
+        '.text-muted': {
+          color: theme('colors.muted'),
+        },
+        
+        // Railway-style semantic borders
+        '.border-gray-100': {
+          borderColor: theme('colors.gray.100'),
+        },
+        '.border-gray-200': {
+          borderColor: theme('colors.gray.200'),
+        },
+        '.border-pink-400': {
+          borderColor: theme('colors.pink.400'),
+        },
+        
+        // Background utilities (existing)
         '.bg-surface-1': {
           backgroundColor: theme('colors.bg.surface1'),
         },
@@ -259,10 +327,7 @@ module.exports = {
           backgroundColor: theme('colors.bg.focus'),
         },
         
-        // Text utilities - REMOVED hardcoded overrides
-        // These should use Tailwind's color system instead
-        
-        // Border utilities
+        // Border utilities (existing)
         '.border-subtle': {
           borderColor: theme('colors.border.subtle'),
         },
@@ -285,21 +350,57 @@ module.exports = {
           borderColor: theme('colors.border.error'),
         },
         
-        // Interactive utilities
-        '.hover\\:bg-hover:hover': {
-          backgroundColor: theme('colors.interactive.hover'),
+        // Railway-style interactive utilities with state strategy
+        '.hover\\:bg-gray-100:hover': {
+          backgroundColor: theme('colors.gray.100'),
+        },
+        '.hover\\:bg-secondaryBg:hover': {
+          backgroundColor: theme('colors.secondaryBg'),
+        },
+        '.hover\\:bg-tertiaryBg:hover': {
+          backgroundColor: theme('colors.tertiaryBg'),
+        },
+        '.hover\\:border-gray-200:hover': {
+          borderColor: theme('colors.gray.200'),
+        },
+        '.hover\\:border-pink-400:hover': {
+          borderColor: theme('colors.pink.400'),
+        },
+        
+        '.active\\:scale-95:active': {
+          transform: 'scale(0.95)',
         },
         '.active\\:bg-active:active': {
           backgroundColor: theme('colors.interactive.active'),
         },
+        
+        '.focus\\:outline-none:focus': {
+          outline: 'none',
+        },
         '.focus\\:bg-focus:focus': {
           backgroundColor: theme('colors.interactive.focus'),
         },
+        
+        '.focus-visible\\:ring-2:focus-visible': {
+          '--tw-ring-offset-shadow': 'var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)',
+          '--tw-ring-shadow': 'var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)',
+          boxShadow: 'var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)',
+        },
+        '.focus-visible\\:ring-pink-700:focus-visible': {
+          '--tw-ring-color': theme('colors.pink.700'),
+        },
+        '.focus-visible\\:ring-gray-600:focus-visible': {
+          '--tw-ring-color': theme('colors.gray.600'),
+        },
+        '.focus-visible\\:bg-gray-100:focus-visible': {
+          backgroundColor: theme('colors.gray.100'),
+        },
+        
         '.selected\\:bg-selected:selected': {
           backgroundColor: theme('colors.interactive.selected'),
         },
         
-        // Enhanced component utilities
+        // Enhanced component utilities with Railway-style states
         '.card': {
           backgroundColor: theme('colors.bg.surface1'),
           border: `1px solid ${theme('colors.border.subtle')}`,
@@ -312,6 +413,56 @@ module.exports = {
             borderColor: theme('colors.border.accent'),
             boxShadow: theme('boxShadow.elevated'),
             transform: 'translateY(-1px)',
+          },
+        },
+        
+        // Railway-style button utilities
+        '.btn-base': {
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: '1px solid transparent',
+          borderRadius: theme('borderRadius.md'),
+          fontSize: theme('fontSize.sm'),
+          fontWeight: theme('fontWeight.medium'),
+          lineHeight: theme('lineHeight.5'),
+          padding: `${theme('spacing.1.5')} ${theme('spacing.3')}`,
+          transition: `all ${theme('transitionDuration.50')} ease-in-out`,
+          cursor: 'pointer',
+          '&:focus': {
+            outline: 'none',
+          },
+          '&:focus-visible': {
+            '--tw-ring-offset-shadow': 'var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)',
+            '--tw-ring-shadow': 'var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)',
+            boxShadow: 'var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)',
+          },
+          '&:active': {
+            transform: 'scale(0.95)',
+          },
+        },
+        '.btn-primary': {
+          backgroundColor: theme('colors.accent.brand'),
+          borderColor: theme('colors.accent.brand'),
+          color: theme('colors.text.onAccent'),
+          '&:hover': {
+            backgroundColor: theme('colors.accent.brandHover'),
+            borderColor: theme('colors.accent.brandHover'),
+          },
+          '&:focus-visible': {
+            '--tw-ring-color': theme('colors.accent.pink700'),
+          },
+        },
+        '.btn-secondary': {
+          backgroundColor: 'transparent',
+          borderColor: 'transparent',
+          color: theme('colors.text.primary'),
+          '&:hover': {
+            backgroundColor: theme('colors.gray.100'),
+            borderColor: theme('colors.gray.100'),
+          },
+          '&:focus-visible': {
+            '--tw-ring-color': theme('colors.gray.600'),
           },
         },
       };

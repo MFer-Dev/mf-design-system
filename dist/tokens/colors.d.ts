@@ -99,6 +99,9 @@ export declare const semanticColors: {
         readonly focus: "rgba(255,255,255,.16)";
         readonly scrim: "rgba(0,0,0,.20)";
         readonly strongScrim: "rgba(0,0,0,.40)";
+        readonly background: "#1A1523";
+        readonly secondaryBg: "#221B2E";
+        readonly tertiaryBg: "#2B2239";
     };
     readonly text: {
         readonly primary: "#F5F5F7";
@@ -108,6 +111,8 @@ export declare const semanticColors: {
         readonly disabled: "#7A7A82";
         readonly onAccent: "#0E0B12";
         readonly inverse: "#0E0B12";
+        readonly success: "#00A676";
+        readonly muted: "#A9A9B0";
     };
     readonly border: {
         readonly subtle: "#342A45";
@@ -118,6 +123,8 @@ export declare const semanticColors: {
         readonly success: "rgba(47,200,154,.24)";
         readonly warning: "rgba(245,158,11,.20)";
         readonly error: "rgba(239,68,68,.20)";
+        readonly gray100: "#342A45";
+        readonly pink400: "#9D6CFF";
     };
     readonly accent: {
         readonly brand: "#6E3CBC";
@@ -137,17 +144,21 @@ export declare const semanticColors: {
         readonly danger: "#C65B6A";
         readonly dangerHover: "#E59AA6";
         readonly dangerWeak: "#F2C1C8";
+        readonly pink700: "#7E52CF";
     };
     readonly focus: {
         readonly ring: "rgba(157,108,255,.25)";
         readonly inner: "rgba(255,255,255,.12)";
         readonly selection: "rgba(157,108,255,.24)";
+        readonly visible: "#7E52CF";
     };
     readonly interactive: {
         readonly hover: "rgba(255,255,255,.08)";
         readonly active: "rgba(255,255,255,.12)";
         readonly selected: "rgba(157,108,255,.24)";
         readonly focus: "rgba(139,92,246,.30)";
+        readonly hoverBg: "#221B2E";
+        readonly hoverDark: "#2B2239";
     };
     readonly chart: {
         readonly 1: "#9D6CFF";

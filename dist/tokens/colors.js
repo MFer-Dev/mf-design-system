@@ -110,6 +110,10 @@ exports.semanticColors = {
         focus: exports.colors.alpha.white16, // Focus state (rgba(255,255,255,.16))
         scrim: exports.colors.alpha.black20, // Overlay (rgba(0,0,0,.20))
         strongScrim: exports.colors.alpha.black40, // Strong overlay
+        // Railway-style strategic backgrounds
+        background: exports.colors.graphite[900], // Main background (Railway: bg-background)
+        secondaryBg: exports.colors.graphite[800], // Secondary background (Railway: bg-secondaryBg)
+        tertiaryBg: exports.colors.graphite[700], // Tertiary background
     },
     // Text
     text: {
@@ -120,6 +124,9 @@ exports.semanticColors = {
         disabled: exports.colors.gray[500], // Disabled text (#7A7A82)
         onAccent: '#0E0B12', // Text on accent backgrounds
         inverse: exports.colors.graphite[1000], // Inverse text
+        // Railway-style text variations
+        success: exports.colors.teal[600], // Success text (Railway: text-success)
+        muted: exports.colors.gray[400], // Muted text (Railway: text-gray-600)
     },
     // Borders & Dividers
     border: {
@@ -131,6 +138,9 @@ exports.semanticColors = {
         success: exports.colors.alpha.teal24, // Success borders (rgba(47,200,154,.24))
         warning: exports.colors.alpha.amber20, // Warning borders
         error: exports.colors.alpha.rose20, // Error borders
+        // Railway-style strategic borders
+        gray100: exports.colors.graphite[600], // Light gray borders (Railway: border-gray-100)
+        pink400: exports.colors.violet[500], // Pink accent borders (Railway: border-pink-400)
     },
     // Brand & Accents
     accent: {
@@ -151,12 +161,16 @@ exports.semanticColors = {
         danger: exports.colors.rose[600], // Danger primary (#C65B6A)
         dangerHover: exports.colors.rose[500], // Danger hover (#E59AA6)
         dangerWeak: exports.colors.rose[400], // Danger weak (#F2C1C8)
+        // Railway-style strategic accents
+        pink700: exports.colors.violet[600], // Pink focus ring (Railway: ring-pink-700)
     },
     // Focus & Selection
     focus: {
         ring: 'rgba(157,108,255,.25)', // Focus ring
         inner: exports.colors.alpha.white12, // Inner focus
         selection: exports.colors.alpha.violet24, // Selection highlight
+        // Railway-style focus
+        visible: exports.colors.violet[600], // Visible focus ring (Railway: focus-visible:ring)
     },
     // Interactive States
     interactive: {
@@ -164,6 +178,9 @@ exports.semanticColors = {
         active: exports.colors.alpha.white12, // Active background
         selected: exports.colors.alpha.violet24, // Selected background
         focus: exports.colors.alpha.violet30, // Focus background
+        // Railway-style hover states
+        hoverBg: exports.colors.graphite[800], // Hover background (Railway: hover:bg-secondaryBg)
+        hoverDark: exports.colors.graphite[700], // Dark hover background (Railway: hover:dark:bg-gray-100)
     },
     // Data Visualization
     chart: {
