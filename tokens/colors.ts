@@ -4,83 +4,83 @@
 export const colors = {
   // Base Palette (Primitives)
   graphite: {
-    1000: '#0E0B12', // Deepest black
-    950: '#140F1B',  // Very dark
-    900: '#1A1523',  // Main page background
-    850: '#1F182A',  // Secondary surface
-    800: '#221B2E',  // Primary surface (panels)
-    750: '#261E33',  // Secondary surface
-    700: '#2B2239',  // Elevated surface (nested panels, editor)
-    600: '#342A45',  // Subtle borders/dividers
-    500: '#413455',  // Medium borders
-    400: '#4E4064',  // Strong borders
+    1000: '#0D1117', // Deepest black
+    950: '#0D1117',  // Very dark
+    900: '#0D1117',  // Main page background
+    850: '#161B22',  // Secondary surface
+    800: '#161B22',  // Primary surface (panels)
+    750: '#21262D',  // Secondary surface
+    700: '#21262D',  // Elevated surface (nested panels, editor)
+    600: '#30363D',  // Subtle borders/dividers
+    500: '#484F58',  // Medium borders
+    400: '#6E7681',  // Strong borders
   },
   
   // Grays - Text & UI chrome
   white: {
-    1000: '#F5F5F7', // Primary text
-    950: '#F5F5F7',  // Slightly muted white
+    1000: '#F0F6FC', // Primary text
+    950: '#E6EDF3',  // Slightly muted white
   },
   gray: {
-    200: '#E5E5E5',  // Light gray
-    300: '#C8C8CC',  // Secondary text
-    400: '#A9A9B0',  // Tertiary text
-    500: '#7A7A82',  // Disabled text
-    600: '#5A5A62',  // Muted text
-    700: '#3e444c',  // Border color
-    800: '#1a1d23',  // Surface color
+    200: '#C9D1D9',  // Light gray
+    300: '#B1BAC4',  // Secondary text
+    400: '#8B949E',  // Tertiary text
+    500: '#6E7681',  // Disabled text
+    600: '#484F58',  // Muted text
+    700: '#30363D',  // Border color
+    800: '#21262D',  // Surface color
   },
   
   // Spectral Accents
   violet: {
-    900: '#4C1D95',  // Darkest purple
-    800: '#5B21B6',  // Dark purple
-    700: '#6E3CBC',  // Brand base (primary CTA, active states)
-    600: '#7E52CF',  // Brand secondary
-    500: '#9D6CFF',  // Hover/focus
-    400: '#B99CFF',  // Brand tertiary
-    300: '#C4B5FD',  // Light purple
-    200: '#DDD6FE',  // Very light purple
+    900: '#30363D',  // Darkest gray
+    800: '#484F58',  // Dark gray
+    700: '#6E7681',  // Brand base (primary CTA, active states)
+    600: '#8B949E',  // Brand secondary
+    500: '#C9D1D9',  // Hover/focus
+    400: '#E6EDF3',  // Brand tertiary
+    300: '#F0F6FC',  // Light gray
+    200: '#FFFFFF',  // Very light gray
   },
   
   teal: {
-    900: '#064E3B',  // Darkest teal
-    800: '#065F46',  // Dark teal
-    700: '#0B7A5A',  // Success base
-    600: '#00A676',  // Success base
-    500: '#2FC89A',  // Success secondary
-    400: '#4FE0B0',  // Success tertiary
-    300: '#6EE7B7',  // Light teal
+    900: '#30363D',  // Darkest gray
+    800: '#484F58',  // Dark gray
+    700: '#6E7681',  // Success base
+    600: '#8B949E',  // Success base
+    500: '#C9D1D9',  // Success secondary
+    400: '#E6EDF3',  // Success tertiary
+    300: '#F0F6FC',  // Light gray
   },
   
   indigo: {
-    900: '#1E1B4B',  // Darkest indigo
-    800: '#1E3A8A',  // Dark indigo
-    700: '#1D4FBF',  // Info base
-    600: '#2C6FFF',  // Info base
-    500: '#5C8DFF',  // Info secondary
-    400: '#7DA9FF',  // Info tertiary
-    300: '#93C5FD',  // Light indigo
+    900: '#30363D',  // Darkest gray
+    800: '#484F58',  // Dark gray
+    700: '#6E7681',  // Info base
+    600: '#8B949E',  // Info base
+    500: '#C9D1D9',  // Info secondary
+    400: '#E6EDF3',  // Info tertiary
+    300: '#F0F6FC',  // Light gray
   },
   
   amber: {
-    900: '#451A03',  // Darkest amber
-    800: '#78350F',  // Dark amber
-    700: '#996A2E',  // Warning base
-    600: '#D7943A',  // Warning secondary
-    500: '#FFB347',  // Warning base (muted)
-    400: '#FFD580',  // Warning tertiary
-    300: '#FCD34D',  // Light amber
+    900: '#30363D',  // Darkest gray
+    800: '#484F58',  // Dark gray
+    700: '#6E7681',  // Warning base
+    600: '#8B949E',  // Warning secondary
+    500: '#C9D1D9',  // Warning base (muted)
+    400: '#E6EDF3',  // Warning tertiary
+    300: '#F0F6FC',  // Light gray
   },
   
   rose: {
-    900: '#4C0519',  // Darkest rose
-    800: '#7F1D1D',  // Dark rose
-    700: '#8F3944',  // Error base
-    600: '#C65B6A',  // Error base (muted)
-    500: '#E59AA6',  // Error secondary
-    400: '#F2C1C8',  // Error tertiary
-    300: '#FCA5A5',  // Light rose
+    900: '#30363D',  // Darkest gray
+    800: '#484F58',  // Dark gray
+    700: '#6E7681',  // Error base
+    600: '#8B949E',  // Error base (muted)
+    500: '#C9D1D9',  // Error secondary
+    400: '#E6EDF3',  // Error tertiary
+    300: '#F0F6FC',  // Light gray
   },
   
   // Alpha Utilities (for overlays & tints)
@@ -91,13 +91,13 @@ export const colors = {
     white16: 'rgba(255,255,255,.16)',  // Focus state
     black20: 'rgba(0,0,0,.20)',        // Overlay
     black40: 'rgba(0,0,0,.40)',        // Strong overlay
-    violet24: 'rgba(157,108,255,.24)', // Violet accent
-    teal24: 'rgba(47,200,154,.24)',    // Teal accent
-    violet20: 'rgba(139,92,246,.20)',  // Violet accent
-    violet30: 'rgba(139,92,246,.30)',  // Violet focus
-    teal20: 'rgba(16,185,129,.20)',    // Teal accent
-    amber20: 'rgba(245,158,11,.20)',   // Amber accent
-    rose20: 'rgba(239,68,68,.20)',     // Rose accent
+    violet24: 'rgba(240,246,252,.24)', // Accent
+    teal24: 'rgba(201,209,217,.24)',   // Accent
+    violet20: 'rgba(240,246,252,.20)', // Accent
+    violet30: 'rgba(240,246,252,.30)', // Focus
+    teal20: 'rgba(201,209,217,.20)',   // Accent
+    amber20: 'rgba(139,148,158,.20)',  // Accent
+    rose20: 'rgba(110,118,129,.20)',   // Accent
   },
 } as const;
 
@@ -124,15 +124,15 @@ export const semanticColors = {
   
   // Text
   text: {
-    primary: colors.white[1000],          // Primary text (#F5F5F7)
-    secondary: colors.gray[300],          // Secondary text (#C8C8CC)
-    tertiary: colors.gray[400],           // Tertiary text (#A9A9B0)
+    primary: colors.white[1000],          // Primary text (#F0F6FC)
+    secondary: colors.gray[200],          // Secondary text (#C9D1D9)
+    tertiary: colors.gray[400],           // Tertiary text (#8B949E)
     quaternary: colors.gray[500],         // Quaternary text
     disabled: colors.gray[500],           // Disabled text (#7A7A82)
-    onAccent: '#0E0B12',                 // Text on accent backgrounds
+    onAccent: colors.graphite[1000],      // Text on accent backgrounds
     inverse: colors.graphite[1000],       // Inverse text
     // Railway-style text variations
-    success: colors.teal[600],            // Success text (Railway: text-success)
+    success: colors.gray[300],            // Success text (Railway: text-success)
     muted: colors.gray[400],              // Muted text (Railway: text-gray-600)
   },
   
@@ -148,39 +148,39 @@ export const semanticColors = {
     error: colors.alpha.rose20,           // Error borders
     // Railway-style strategic borders
     gray100: colors.graphite[600],        // Light gray borders (Railway: border-gray-100)
-    pink400: colors.violet[500],          // Pink accent borders (Railway: border-pink-400)
+    pink400: colors.gray[400],            // Pink accent borders (Railway: border-pink-400)
   },
   
   // Brand & Accents
   accent: {
-    brand: colors.violet[700],            // Brand primary (#6E3CBC)
-    brandHover: colors.violet[500],       // Brand hover (#9D6CFF)
-    brandActive: colors.violet[700],      // Brand active
-    brandLight: colors.violet[400],       // Brand light
-    brandDark: colors.violet[800],        // Brand dark
-    success: colors.teal[600],            // Success primary (#00A676)
-    successHover: colors.teal[500],       // Success hover (#2FC89A)
-    successWeak: colors.teal[400],        // Success weak (#4FE0B0)
-    info: colors.indigo[600],             // Info primary (#2C6FFF)
-    infoHover: colors.indigo[500],        // Info hover (#5C8DFF)
-    infoWeak: colors.indigo[400],         // Info weak (#7DA9FF)
-    warning: colors.amber[500],           // Warning primary (#FFB347)
-    warningHover: colors.amber[500],      // Warning hover
-    warningWeak: colors.amber[400],       // Warning weak (#FFD580)
-    danger: colors.rose[600],             // Danger primary (#C65B6A)
-    dangerHover: colors.rose[500],        // Danger hover (#E59AA6)
-    dangerWeak: colors.rose[400],         // Danger weak (#F2C1C8)
+    brand: colors.gray[200],              // Brand primary
+    brandHover: colors.white[1000],       // Brand hover
+    brandActive: colors.gray[300],        // Brand active
+    brandLight: colors.white[950],        // Brand light
+    brandDark: colors.gray[400],          // Brand dark
+    success: colors.gray[300],            // Success primary
+    successHover: colors.gray[200],       // Success hover
+    successWeak: colors.gray[400],        // Success weak
+    info: colors.gray[400],               // Info primary
+    infoHover: colors.gray[300],          // Info hover
+    infoWeak: colors.gray[500],           // Info weak
+    warning: colors.gray[500],            // Warning primary
+    warningHover: colors.gray[400],       // Warning hover
+    warningWeak: colors.gray[600],        // Warning weak
+    danger: colors.gray[600],             // Danger primary
+    dangerHover: colors.gray[500],        // Danger hover
+    dangerWeak: colors.gray[700],         // Danger weak
     // Railway-style strategic accents
-    pink700: colors.violet[600],          // Pink focus ring (Railway: ring-pink-700)
+    pink700: colors.gray[600],            // Pink focus ring (Railway: ring-pink-700)
   },
   
   // Focus & Selection
   focus: {
-    ring: 'rgba(157,108,255,.25)',       // Focus ring
+    ring: 'rgba(240,246,252,.25)',       // Focus ring
     inner: colors.alpha.white12,          // Inner focus
     selection: colors.alpha.violet24,     // Selection highlight
     // Railway-style focus
-    visible: colors.violet[600],          // Visible focus ring (Railway: focus-visible:ring)
+    visible: colors.gray[200],            // Visible focus ring (Railway: focus-visible:ring)
   },
   
   // Interactive States
@@ -196,14 +196,14 @@ export const semanticColors = {
   
   // Data Visualization
   chart: {
-    1: colors.violet[500],                // Primary chart color (#9D6CFF)
-    2: colors.teal[500],                  // Secondary chart color (#2FC89A)
-    3: colors.indigo[500],                // Tertiary chart color (#5C8DFF)
-    4: colors.amber[500],                 // Warning chart color (#FFB347)
-    5: colors.rose[500],                  // Error chart color (#E59AA6)
-    6: colors.violet[400],                // Light violet (#B99CFF)
-    7: colors.teal[400],                  // Light teal (#4FE0B0)
-    8: colors.indigo[400],                // Light indigo (#7DA9FF)
+    1: colors.gray[200],                  // Primary chart color
+    2: colors.gray[300],                  // Secondary chart color
+    3: colors.gray[400],                  // Tertiary chart color
+    4: colors.gray[500],                  // Warning chart color
+    5: colors.gray[600],                  // Error chart color
+    6: colors.gray[300],                  // Light gray
+    7: colors.gray[400],                  // Light gray
+    8: colors.gray[500],                  // Light gray
   },
 } as const;
 

@@ -3,6 +3,19 @@
 
 const { semanticColors } = require('../dist/tokens/colors');
 
+const grayscaleScale = (base, hover, weak) => ({
+  50: semanticColors.bg.hover,
+  100: semanticColors.bg.selected,
+  200: semanticColors.border.subtle,
+  300: weak,
+  400: weak,
+  500: base,
+  600: base,
+  700: hover,
+  800: hover,
+  900: hover,
+});
+
 module.exports = {
   darkMode: ['class', '[data-theme="mf-dark"]'],
   theme: {
@@ -92,6 +105,38 @@ module.exports = {
           dangerWeak: semanticColors.accent.dangerWeak,
           pink700: semanticColors.accent.pink700,
         },
+
+        // Neutralized Tailwind palette overrides (GitHub-style grayscale)
+        blue: grayscaleScale(
+          semanticColors.accent.info,
+          semanticColors.accent.infoHover,
+          semanticColors.accent.infoWeak
+        ),
+        green: grayscaleScale(
+          semanticColors.accent.success,
+          semanticColors.accent.successHover,
+          semanticColors.accent.successWeak
+        ),
+        red: grayscaleScale(
+          semanticColors.accent.danger,
+          semanticColors.accent.dangerHover,
+          semanticColors.accent.dangerWeak
+        ),
+        yellow: grayscaleScale(
+          semanticColors.accent.warning,
+          semanticColors.accent.warningHover,
+          semanticColors.accent.warningWeak
+        ),
+        orange: grayscaleScale(
+          semanticColors.accent.warning,
+          semanticColors.accent.warningHover,
+          semanticColors.accent.warningWeak
+        ),
+        purple: grayscaleScale(
+          semanticColors.accent.brand,
+          semanticColors.accent.brandHover,
+          semanticColors.accent.brandLight
+        ),
         
         // Focus & Selection (existing)
         focus: {

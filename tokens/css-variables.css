@@ -3,69 +3,69 @@
 
 :root {
   /* Base Graphite Colors */
-  --graphite-1000: #0A0A0A;
-  --graphite-950: #0E0E0E;
-  --graphite-900: #0e1116;
-  --graphite-850: #1a1d23;
-  --graphite-800: #0e0e0e;
-  --graphite-750: #1a1d23;
-  --graphite-700: #2a2a2a;
-  --graphite-600: #3e444c;
-  --graphite-500: #555555;
-  --graphite-400: #666666;
+  --graphite-1000: #0D1117;
+  --graphite-950: #0D1117;
+  --graphite-900: #0D1117;
+  --graphite-850: #161B22;
+  --graphite-800: #161B22;
+  --graphite-750: #21262D;
+  --graphite-700: #21262D;
+  --graphite-600: #30363D;
+  --graphite-500: #484F58;
+  --graphite-400: #6E7681;
 
   /* Text Colors */
-  --white-1000: #FFFFFF;
-  --white-950: #F5F5F7;
-  --gray-200: #E5E5E5;
-  --gray-300: #CCCCCC;
-  --gray-400: #999999;
-  --gray-500: #666666;
-  --gray-600: #5A5A62;
-  --gray-700: #3e444c;
-  --gray-800: #1a1d23;
+  --white-1000: #F0F6FC;
+  --white-950: #E6EDF3;
+  --gray-200: #C9D1D9;
+  --gray-300: #B1BAC4;
+  --gray-400: #8B949E;
+  --gray-500: #6E7681;
+  --gray-600: #484F58;
+  --gray-700: #30363D;
+  --gray-800: #21262D;
 
   /* Spectral Accent Colors */
-  --violet-900: #4C1D95;
-  --violet-800: #5B21B6;
-  --violet-700: #6E3CBC;
-  --violet-600: #7E52CF;
-  --violet-500: #8B5CF6;
-  --violet-400: #A78BFA;
-  --violet-300: #C4B5FD;
-  --violet-200: #DDD6FE;
+  --violet-900: #30363D;
+  --violet-800: #484F58;
+  --violet-700: #6E7681;
+  --violet-600: #8B949E;
+  --violet-500: #C9D1D9;
+  --violet-400: #E6EDF3;
+  --violet-300: #F0F6FC;
+  --violet-200: #FFFFFF;
 
-  --teal-900: #064E3B;
-  --teal-800: #065F46;
-  --teal-700: #0B7A5A;
-  --teal-600: #10B981;
-  --teal-500: #2FC89A;
-  --teal-400: #4FE0B0;
-  --teal-300: #6EE7B7;
+  --teal-900: #30363D;
+  --teal-800: #484F58;
+  --teal-700: #6E7681;
+  --teal-600: #8B949E;
+  --teal-500: #C9D1D9;
+  --teal-400: #E6EDF3;
+  --teal-300: #F0F6FC;
 
-  --indigo-900: #1E1B4B;
-  --indigo-800: #1E3A8A;
-  --indigo-700: #1D4FBF;
-  --indigo-600: #3B82F6;
-  --indigo-500: #5C8DFF;
-  --indigo-400: #7DA9FF;
-  --indigo-300: #93C5FD;
+  --indigo-900: #30363D;
+  --indigo-800: #484F58;
+  --indigo-700: #6E7681;
+  --indigo-600: #8B949E;
+  --indigo-500: #C9D1D9;
+  --indigo-400: #E6EDF3;
+  --indigo-300: #F0F6FC;
 
-  --amber-900: #451A03;
-  --amber-800: #78350F;
-  --amber-700: #996A2E;
-  --amber-600: #F59E0B;
-  --amber-500: #FFB347;
-  --amber-400: #FFD580;
-  --amber-300: #FCD34D;
+  --amber-900: #30363D;
+  --amber-800: #484F58;
+  --amber-700: #6E7681;
+  --amber-600: #8B949E;
+  --amber-500: #C9D1D9;
+  --amber-400: #E6EDF3;
+  --amber-300: #F0F6FC;
 
-  --rose-900: #4C0519;
-  --rose-800: #7F1D1D;
-  --rose-700: #8F3944;
-  --rose-600: #EF4444;
-  --rose-500: #E59AA6;
-  --rose-400: #F2C1C8;
-  --rose-300: #FCA5A5;
+  --rose-900: #30363D;
+  --rose-800: #484F58;
+  --rose-700: #6E7681;
+  --rose-600: #8B949E;
+  --rose-500: #C9D1D9;
+  --rose-400: #E6EDF3;
+  --rose-300: #F0F6FC;
 
   /* Alpha Utilities */
   --alpha-white-05: rgba(255,255,255,.05);
@@ -74,11 +74,11 @@
   --alpha-white-16: rgba(255,255,255,.16);
   --alpha-black-20: rgba(0,0,0,.20);
   --alpha-black-40: rgba(0,0,0,.40);
-  --alpha-violet-20: rgba(139,92,246,.20);
-  --alpha-violet-30: rgba(139,92,246,.30);
-  --alpha-teal-20: rgba(16,185,129,.20);
-  --alpha-amber-20: rgba(245,158,11,.20);
-  --alpha-rose-20: rgba(239,68,68,.20);
+  --alpha-violet-20: rgba(240,246,252,.20);
+  --alpha-violet-30: rgba(240,246,252,.30);
+  --alpha-teal-20: rgba(201,209,217,.20);
+  --alpha-amber-20: rgba(139,148,158,.20);
+  --alpha-rose-20: rgba(110,118,129,.20);
 
   /* Semantic Color Tokens - Railway-Style */
   
@@ -115,23 +115,23 @@
   --border-error: var(--alpha-rose-20);
 
   /* Brand & Accent Colors */
-  --accent-brand: var(--violet-500);
-  --accent-brand-hover: var(--violet-600);
-  --accent-brand-active: var(--violet-700);
-  --accent-brand-light: var(--violet-400);
-  --accent-brand-dark: var(--violet-800);
-  --accent-success: var(--teal-600);
-  --accent-success-hover: var(--teal-500);
-  --accent-success-weak: var(--teal-400);
-  --accent-info: var(--indigo-600);
-  --accent-info-hover: var(--indigo-500);
-  --accent-info-weak: var(--indigo-400);
-  --accent-warning: var(--amber-600);
-  --accent-warning-hover: var(--amber-500);
-  --accent-warning-weak: var(--amber-400);
-  --accent-danger: var(--rose-600);
-  --accent-danger-hover: var(--rose-500);
-  --accent-danger-weak: var(--rose-400);
+  --accent-brand: var(--gray-200);
+  --accent-brand-hover: var(--white-1000);
+  --accent-brand-active: var(--gray-300);
+  --accent-brand-light: var(--white-950);
+  --accent-brand-dark: var(--gray-400);
+  --accent-success: var(--gray-300);
+  --accent-success-hover: var(--gray-200);
+  --accent-success-weak: var(--gray-400);
+  --accent-info: var(--gray-400);
+  --accent-info-hover: var(--gray-300);
+  --accent-info-weak: var(--gray-500);
+  --accent-warning: var(--gray-500);
+  --accent-warning-hover: var(--gray-400);
+  --accent-warning-weak: var(--gray-600);
+  --accent-danger: var(--gray-600);
+  --accent-danger-hover: var(--gray-500);
+  --accent-danger-weak: var(--gray-700);
 
   /* Focus & Selection */
   --focus-ring: var(--alpha-violet-30);
@@ -145,14 +145,14 @@
   --interactive-focus: var(--alpha-violet-30);
 
   /* Chart Colors */
-  --chart-1: var(--violet-500);
-  --chart-2: var(--teal-500);
-  --chart-3: var(--indigo-500);
-  --chart-4: var(--amber-500);
-  --chart-5: var(--rose-500);
-  --chart-6: var(--violet-400);
-  --chart-7: var(--teal-400);
-  --chart-8: var(--indigo-400);
+  --chart-1: var(--gray-200);
+  --chart-2: var(--gray-300);
+  --chart-3: var(--gray-400);
+  --chart-4: var(--gray-500);
+  --chart-5: var(--gray-600);
+  --chart-6: var(--gray-300);
+  --chart-7: var(--gray-400);
+  --chart-8: var(--gray-500);
 
   /* Railway-Style Spacing */
   --spacing-railway-xs: 0.125rem;
@@ -193,14 +193,14 @@
 /* Light theme (if needed) */
 [data-theme="mf-light"] {
   --bg-page: #FFFFFF;
-  --bg-surface-1: #F8F9FA;
-  --bg-surface-2: #E9ECEF;
-  --bg-surface-3: #DEE2E6;
-  --text-primary: #212529;
-  --text-secondary: #6C757D;
-  --text-tertiary: #ADB5BD;
-  --text-quaternary: #CED4DA;
-  --border-subtle: #E9ECEF;
-  --border-default: #DEE2E6;
-  --border-strong: #CED4DA;
+  --bg-surface-1: #F6F8FA;
+  --bg-surface-2: #EAECEF;
+  --bg-surface-3: #E1E4E8;
+  --text-primary: #24292F;
+  --text-secondary: #57606A;
+  --text-tertiary: #6E7681;
+  --text-quaternary: #8B949E;
+  --border-subtle: #E1E4E8;
+  --border-default: #D0D7DE;
+  --border-strong: #AFB8C1;
 }
