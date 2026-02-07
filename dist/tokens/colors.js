@@ -6,30 +6,30 @@ exports.semanticColors = exports.colors = void 0;
 exports.colors = {
     // Base Palette (Primitives)
     graphite: {
-        1000: '#0D1117', // Deepest black
-        950: '#0D1117', // Very dark
-        900: '#0D1117', // Main page background
-        850: '#161B22', // Secondary surface
-        800: '#161B22', // Primary surface (panels)
-        750: '#21262D', // Secondary surface
-        700: '#21262D', // Elevated surface (nested panels, editor)
-        600: '#30363D', // Subtle borders/dividers
-        500: '#484F58', // Medium borders
-        400: '#6E7681', // Strong borders
+        1000: '#0F0B12', // Deepest black (warm graphite)
+        950: '#140F17', // Very dark
+        900: '#16111C', // Main page background
+        850: '#1B1523', // Secondary surface
+        800: '#20192A', // Primary surface (panels)
+        750: '#261E33', // Secondary surface
+        700: '#2C223A', // Elevated surface (nested panels, editor)
+        600: '#382C4A', // Subtle borders/dividers
+        500: '#46365C', // Medium borders
+        400: '#5A4972', // Strong borders
     },
     // Grays - Text & UI chrome
     white: {
-        1000: '#F0F6FC', // Primary text
-        950: '#E6EDF3', // Slightly muted white
+        1000: '#F6F2F8', // Primary text (warm white)
+        950: '#EDE7F1', // Slightly muted white
     },
     gray: {
-        200: '#C9D1D9', // Light gray
-        300: '#B1BAC4', // Secondary text
-        400: '#8B949E', // Tertiary text
-        500: '#6E7681', // Disabled text
-        600: '#484F58', // Muted text
-        700: '#30363D', // Border color
-        800: '#21262D', // Surface color
+        200: '#D6CBD8', // Light gray (warm)
+        300: '#BDB2C3', // Secondary text
+        400: '#9A8DA3', // Tertiary text
+        500: '#7B6F86', // Disabled text
+        600: '#5F556D', // Muted text
+        700: '#453C52', // Border color
+        800: '#251F2D', // Surface color
     },
     // Spectral Accents
     violet: {
