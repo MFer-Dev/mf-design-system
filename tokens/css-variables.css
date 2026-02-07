@@ -3,69 +3,69 @@
 
 :root {
   /* Base Graphite Colors */
-  --graphite-1000: #0F0B12;
-  --graphite-950: #140F17;
-  --graphite-900: #16111C;
-  --graphite-850: #1B1523;
-  --graphite-800: #20192A;
-  --graphite-750: #261E33;
-  --graphite-700: #2C223A;
-  --graphite-600: #382C4A;
-  --graphite-500: #46365C;
-  --graphite-400: #5A4972;
+  --graphite-1000: #100E10;
+  --graphite-950: #151214;
+  --graphite-900: #181416;
+  --graphite-850: #1D181B;
+  --graphite-800: #221C1F;
+  --graphite-750: #282226;
+  --graphite-700: #2F282C;
+  --graphite-600: #3A3136;
+  --graphite-500: #4A3E45;
+  --graphite-400: #5F5059;
 
   /* Text Colors */
-  --white-1000: #F6F2F8;
-  --white-950: #EDE7F1;
-  --gray-200: #D6CBD8;
-  --gray-300: #BDB2C3;
-  --gray-400: #9A8DA3;
-  --gray-500: #7B6F86;
-  --gray-600: #5F556D;
-  --gray-700: #453C52;
-  --gray-800: #251F2D;
+  --white-1000: #F5F2F1;
+  --white-950: #ECE7E5;
+  --gray-200: #D7CFCC;
+  --gray-300: #BEB4B0;
+  --gray-400: #9F918C;
+  --gray-500: #7F736F;
+  --gray-600: #615854;
+  --gray-700: #463F3C;
+  --gray-800: #2B2624;
 
   /* Spectral Accent Colors */
-  --violet-900: #453C52;
-  --violet-800: #5F556D;
-  --violet-700: #7B6F86;
-  --violet-600: #9A8DA3;
-  --violet-500: #D6CBD8;
-  --violet-400: #EDE7F1;
-  --violet-300: #F6F2F8;
+  --violet-900: #463F3C;
+  --violet-800: #615854;
+  --violet-700: #7F736F;
+  --violet-600: #9F918C;
+  --violet-500: #D7CFCC;
+  --violet-400: #ECE7E5;
+  --violet-300: #F5F2F1;
   --violet-200: #FFFFFF;
 
-  --teal-900: #453C52;
-  --teal-800: #5F556D;
-  --teal-700: #7B6F86;
-  --teal-600: #9A8DA3;
-  --teal-500: #D6CBD8;
-  --teal-400: #EDE7F1;
-  --teal-300: #F6F2F8;
+  --teal-900: #463F3C;
+  --teal-800: #615854;
+  --teal-700: #7F736F;
+  --teal-600: #9F918C;
+  --teal-500: #D7CFCC;
+  --teal-400: #ECE7E5;
+  --teal-300: #F5F2F1;
 
-  --indigo-900: #453C52;
-  --indigo-800: #5F556D;
-  --indigo-700: #7B6F86;
-  --indigo-600: #9A8DA3;
-  --indigo-500: #D6CBD8;
-  --indigo-400: #EDE7F1;
-  --indigo-300: #F6F2F8;
+  --indigo-900: #463F3C;
+  --indigo-800: #615854;
+  --indigo-700: #7F736F;
+  --indigo-600: #9F918C;
+  --indigo-500: #D7CFCC;
+  --indigo-400: #ECE7E5;
+  --indigo-300: #F5F2F1;
 
-  --amber-900: #453C52;
-  --amber-800: #5F556D;
-  --amber-700: #7B6F86;
-  --amber-600: #9A8DA3;
-  --amber-500: #D6CBD8;
-  --amber-400: #EDE7F1;
-  --amber-300: #F6F2F8;
+  --amber-900: #463F3C;
+  --amber-800: #615854;
+  --amber-700: #7F736F;
+  --amber-600: #9F918C;
+  --amber-500: #D7CFCC;
+  --amber-400: #ECE7E5;
+  --amber-300: #F5F2F1;
 
-  --rose-900: #453C52;
-  --rose-800: #5F556D;
-  --rose-700: #7B6F86;
-  --rose-600: #9A8DA3;
-  --rose-500: #D6CBD8;
-  --rose-400: #EDE7F1;
-  --rose-300: #F6F2F8;
+  --rose-900: #463F3C;
+  --rose-800: #615854;
+  --rose-700: #7F736F;
+  --rose-600: #9F918C;
+  --rose-500: #D7CFCC;
+  --rose-400: #ECE7E5;
+  --rose-300: #F5F2F1;
 
   /* Alpha Utilities */
   --alpha-white-05: rgba(255,255,255,.05);
@@ -74,11 +74,11 @@
   --alpha-white-16: rgba(255,255,255,.16);
   --alpha-black-20: rgba(0,0,0,.20);
   --alpha-black-40: rgba(0,0,0,.40);
-  --alpha-violet-20: rgba(246,242,248,.20);
-  --alpha-violet-30: rgba(246,242,248,.30);
-  --alpha-teal-20: rgba(214,203,216,.20);
-  --alpha-amber-20: rgba(154,141,163,.20);
-  --alpha-rose-20: rgba(123,111,134,.20);
+  --alpha-violet-20: rgba(245,242,241,.20);
+  --alpha-violet-30: rgba(245,242,241,.30);
+  --alpha-teal-20: rgba(215,207,204,.20);
+  --alpha-amber-20: rgba(159,145,140,.20);
+  --alpha-rose-20: rgba(127,115,111,.20);
 
   /* Semantic Color Tokens - Railway-Style */
   

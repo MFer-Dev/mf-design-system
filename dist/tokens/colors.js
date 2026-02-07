@@ -6,77 +6,77 @@ exports.semanticColors = exports.colors = void 0;
 exports.colors = {
     // Base Palette (Primitives)
     graphite: {
-        1000: '#0F0B12', // Deepest black (warm graphite)
-        950: '#140F17', // Very dark
-        900: '#16111C', // Main page background
-        850: '#1B1523', // Secondary surface
-        800: '#20192A', // Primary surface (panels)
-        750: '#261E33', // Secondary surface
-        700: '#2C223A', // Elevated surface (nested panels, editor)
-        600: '#382C4A', // Subtle borders/dividers
-        500: '#46365C', // Medium borders
-        400: '#5A4972', // Strong borders
+        1000: '#100E10', // Deepest black (warm neutral)
+        950: '#151214', // Very dark
+        900: '#181416', // Main page background
+        850: '#1D181B', // Secondary surface
+        800: '#221C1F', // Primary surface (panels)
+        750: '#282226', // Secondary surface
+        700: '#2F282C', // Elevated surface (nested panels, editor)
+        600: '#3A3136', // Subtle borders/dividers
+        500: '#4A3E45', // Medium borders
+        400: '#5F5059', // Strong borders
     },
     // Grays - Text & UI chrome
     white: {
-        1000: '#F6F2F8', // Primary text (warm white)
-        950: '#EDE7F1', // Slightly muted white
+        1000: '#F5F2F1', // Primary text (warm white)
+        950: '#ECE7E5', // Slightly muted white
     },
     gray: {
-        200: '#D6CBD8', // Light gray (warm)
-        300: '#BDB2C3', // Secondary text
-        400: '#9A8DA3', // Tertiary text
-        500: '#7B6F86', // Disabled text
-        600: '#5F556D', // Muted text
-        700: '#453C52', // Border color
-        800: '#251F2D', // Surface color
+        200: '#D7CFCC', // Light gray (warm)
+        300: '#BEB4B0', // Secondary text
+        400: '#9F918C', // Tertiary text
+        500: '#7F736F', // Disabled text
+        600: '#615854', // Muted text
+        700: '#463F3C', // Border color
+        800: '#2B2624', // Surface color
     },
     // Spectral Accents
     violet: {
-        900: '#30363D', // Darkest gray
-        800: '#484F58', // Dark gray
-        700: '#6E7681', // Brand base (primary CTA, active states)
-        600: '#8B949E', // Brand secondary
-        500: '#C9D1D9', // Hover/focus
-        400: '#E6EDF3', // Brand tertiary
-        300: '#F0F6FC', // Light gray
+        900: '#463F3C', // Darkest gray
+        800: '#615854', // Dark gray
+        700: '#7F736F', // Brand base (primary CTA, active states)
+        600: '#9F918C', // Brand secondary
+        500: '#D7CFCC', // Hover/focus
+        400: '#ECE7E5', // Brand tertiary
+        300: '#F5F2F1', // Light gray
         200: '#FFFFFF', // Very light gray
     },
     teal: {
-        900: '#30363D', // Darkest gray
-        800: '#484F58', // Dark gray
-        700: '#6E7681', // Success base
-        600: '#8B949E', // Success base
-        500: '#C9D1D9', // Success secondary
-        400: '#E6EDF3', // Success tertiary
-        300: '#F0F6FC', // Light gray
+        900: '#463F3C', // Darkest gray
+        800: '#615854', // Dark gray
+        700: '#7F736F', // Success base
+        600: '#9F918C', // Success base
+        500: '#D7CFCC', // Success secondary
+        400: '#ECE7E5', // Success tertiary
+        300: '#F5F2F1', // Light gray
     },
     indigo: {
-        900: '#30363D', // Darkest gray
-        800: '#484F58', // Dark gray
-        700: '#6E7681', // Info base
-        600: '#8B949E', // Info base
-        500: '#C9D1D9', // Info secondary
-        400: '#E6EDF3', // Info tertiary
-        300: '#F0F6FC', // Light gray
+        900: '#463F3C', // Darkest gray
+        800: '#615854', // Dark gray
+        700: '#7F736F', // Info base
+        600: '#9F918C', // Info base
+        500: '#D7CFCC', // Info secondary
+        400: '#ECE7E5', // Info tertiary
+        300: '#F5F2F1', // Light gray
     },
     amber: {
-        900: '#30363D', // Darkest gray
-        800: '#484F58', // Dark gray
-        700: '#6E7681', // Warning base
-        600: '#8B949E', // Warning secondary
-        500: '#C9D1D9', // Warning base (muted)
-        400: '#E6EDF3', // Warning tertiary
-        300: '#F0F6FC', // Light gray
+        900: '#463F3C', // Darkest gray
+        800: '#615854', // Dark gray
+        700: '#7F736F', // Warning base
+        600: '#9F918C', // Warning secondary
+        500: '#D7CFCC', // Warning base (muted)
+        400: '#ECE7E5', // Warning tertiary
+        300: '#F5F2F1', // Light gray
     },
     rose: {
-        900: '#30363D', // Darkest gray
-        800: '#484F58', // Dark gray
-        700: '#6E7681', // Error base
-        600: '#8B949E', // Error base (muted)
-        500: '#C9D1D9', // Error secondary
-        400: '#E6EDF3', // Error tertiary
-        300: '#F0F6FC', // Light gray
+        900: '#463F3C', // Darkest gray
+        800: '#615854', // Dark gray
+        700: '#7F736F', // Error base
+        600: '#9F918C', // Error base (muted)
+        500: '#D7CFCC', // Error secondary
+        400: '#ECE7E5', // Error tertiary
+        300: '#F5F2F1', // Light gray
     },
     // Alpha Utilities (for overlays & tints)
     alpha: {
@@ -86,13 +86,13 @@ exports.colors = {
         white16: 'rgba(255,255,255,.16)', // Focus state
         black20: 'rgba(0,0,0,.20)', // Overlay
         black40: 'rgba(0,0,0,.40)', // Strong overlay
-        violet24: 'rgba(240,246,252,.24)', // Accent
-        teal24: 'rgba(201,209,217,.24)', // Accent
-        violet20: 'rgba(240,246,252,.20)', // Accent
-        violet30: 'rgba(240,246,252,.30)', // Focus
-        teal20: 'rgba(201,209,217,.20)', // Accent
-        amber20: 'rgba(139,148,158,.20)', // Accent
-        rose20: 'rgba(110,118,129,.20)', // Accent
+        violet24: 'rgba(245,242,241,.24)', // Accent
+        teal24: 'rgba(215,207,204,.24)', // Accent
+        violet20: 'rgba(245,242,241,.20)', // Accent
+        violet30: 'rgba(245,242,241,.30)', // Focus
+        teal20: 'rgba(215,207,204,.20)', // Accent
+        amber20: 'rgba(159,145,140,.20)', // Accent
+        rose20: 'rgba(127,115,111,.20)', // Accent
     },
 };
 // Semantic Color Tokens - Matterforma Dark Spectral
