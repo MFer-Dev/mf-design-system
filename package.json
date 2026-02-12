@@ -1,33 +1,39 @@
 {
   "name": "@matterforma/design-system",
-  "version": "1.0.1",
-  "description": "Matterforma Design System - Comprehensive design tokens and components",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "clean": "rm -rf dist",
-    "prepublishOnly": "npm run build"
-  },
-  "keywords": [
-    "design-system",
-    "matterforma",
-    "tokens",
-    "components",
-    "tailwind"
-  ],
-  "author": "Matterforma",
+  "version": "2.0.0",
+  "private": false,
+  "description": "Matterforma Design System: portable tokens, typography, modes, and UI primitives.",
   "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.9.2"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MFer-Dev/mf-design-system.git"
   },
-  "peerDependencies": {
-    "tailwindcss": "^3.0.0"
+  "homepage": "https://github.com/MFer-Dev/mf-design-system#readme",
+  "bugs": {
+    "url": "https://github.com/MFer-Dev/mf-design-system/issues"
+  },
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "check": "node -e \"console.log('mf-design-system: css package OK')\"",
+    "pack:check": "npm pack --dry-run"
   },
   "files": [
-    "dist/**/*",
-    "tailwind/**/*",
-    "tokens/**/*"
-  ]
+    "src",
+    "README.md",
+    "STYLE_GUIDE.md"
+  ],
+  "exports": {
+    ".": "./src/index.css",
+    "./tokens": "./src/tokens.css",
+    "./typography": "./src/typography.css",
+    "./primitives": "./src/primitives.css",
+    "./components": "./src/components.css",
+    "./modes": "./src/modes.css"
+  }
 }

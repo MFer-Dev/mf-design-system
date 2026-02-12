@@ -1,63 +1,75 @@
 # Matterforma Design System
 
-A comprehensive, production-ready design system for the Matterforma platform suite. This system provides consistent design tokens, components, and guidelines across all Matterforma products.
+Single source of truth for Matterforma UI across public web, product surfaces, and back-office/admin tools.
 
-## 🚀 **Railway Deployment Trigger - Design System Complete**
+## What this repository is
+This repository now contains the V2 design system package and replaces the previous V1 implementation.
 
-The **Matterforma Design System** is now fully implemented across all repositories:
-- **mf-web**: Marketing website with new violet theme
-- **mf-platform**: All apps using unified design system  
-- **mf-manager**: Admin tools with consistent design
-- **Design System**: Centralized design tokens and components
+It is a CSS-first package with:
+- design tokens
+- semantic typography
+- layout primitives
+- component primitives
+- mode theming
 
-## 🎨 **Color System**
+## Package
+- npm package: `@matterforma/design-system`
+- current major: `2.x`
 
-**Dark Spectral Color System v1.0** - A comprehensive, production-ready color specification for a dark, high-contrast (but non-harsh) UI that uses white/gray for text by default and reserves hue for emphasis, interactivity, and signals.
+## Core contract for all surfaces
+Every consuming app should:
+1. Install the package from npm/GitHub package registry.
+2. Import `@matterforma/design-system` once in app-global styles.
+3. Apply `mfds-root` plus the correct mode class at app shell/root.
 
-### Core Principles
+Example:
 
-1. **Dark-first**: Interface sits on a violet-inflected graphite base, not pure black
-2. **Text-first legibility**: Body and headings use white → light-gray only
-3. **Muted saturation**: Buttons are never neon; all accents are spectral and controlled
-4. **Semantic tokens > raw hex**: Design with semantic tokens for safe propagation
-5. **WCAG-aware**: Minimum 4.5:1 contrast for body text; 3:1 for large headings
+```css
+@import "@matterforma/design-system";
+```
 
-## 🚀 **Quick Start**
+```html
+<body class="mfds-root mfds-mode-public">
+```
 
+or
+
+```html
+<div class="mfds-root mfds-mode-console">
+```
+
+## Modes
+- `mfds-mode-public`: public-facing, narrative surfaces
+- `mfds-mode-console`: private/product/operational surfaces
+
+## Exports
+- `@matterforma/design-system` -> `src/index.css`
+- `@matterforma/design-system/tokens`
+- `@matterforma/design-system/typography`
+- `@matterforma/design-system/primitives`
+- `@matterforma/design-system/components`
+- `@matterforma/design-system/modes`
+
+## Propagation model
+Design-system updates propagate to all surfaces when consumers upgrade the package version.
+
+Recommended release workflow:
+1. Merge DS changes in this repo.
+2. Publish new semver version.
+3. Bump package version in each surface repo.
+4. Validate visual regression and deploy.
+
+## Local validation
 ```bash
-npm install @matterforma/design-system
+npm run check
+npm run pack:check
 ```
 
-## 📚 **Documentation**
-
-- [Color System](./docs/color-system.md)
-- [Component Library](./docs/components.md)
-- [Design Tokens](./docs/tokens.md)
-- [Implementation Guide](./docs/implementation.md)
-
-## 🏗️ **Repository Structure**
-
-```
-mf-design-system/
-├── packages/
-│   ├── tokens/              # Design tokens (colors, spacing, typography)
-│   ├── components/          # Reusable UI components
-│   └── tailwind/           # Tailwind configurations
-├── docs/                    # Documentation
-├── examples/                # Implementation examples
-└── dist/                    # Built packages
-```
-
-## 🔗 **Products Using This System**
-
-- **mf-web**: Marketing website
-- **mf-platform**: Main platform (Formatr, Vault, Pulse, Immunity)
-- **mf-manager**: Admin tools
-
-## 📝 **License**
-
-MIT License - see [LICENSE](./LICENSE) for details
-
----
-
-**The Matterforma platform now has a world-class, professional design system that will scale with your growth and provide a consistent, sophisticated user experience across all products!** 🎨✨
+## Files
+- `src/tokens.css`
+- `src/modes.css`
+- `src/typography.css`
+- `src/primitives.css`
+- `src/components.css`
+- `src/index.css`
+- `STYLE_GUIDE.md`

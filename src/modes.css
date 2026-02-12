@@ -1,0 +1,23 @@
+.mfds-mode-public {
+  --mfds-color-bg-page: #f7f6f3;
+  --mfds-color-bg-surface: #ffffff;
+  --mfds-color-bg-muted: #f2f0ec;
+  --mfds-color-border-subtle: #e4dfd9;
+  --mfds-color-border-default: #d8d1ca;
+  --mfds-color-text-primary: #151412;
+  --mfds-color-text-secondary: #605a53;
+  --mfds-color-text-tertiary: #7f7670;
+  --mfds-color-accent: #d9ef65;
+}
+
+.mfds-mode-console {
+  --mfds-color-bg-page: #0f0f11;
+  --mfds-color-bg-surface: #17171b;
+  --mfds-color-bg-muted: #1e1f25;
+  --mfds-color-border-subtle: #2b2d35;
+  --mfds-color-border-default: #3a3d47;
+  --mfds-color-text-primary: #f4f2ef;
+  --mfds-color-text-secondary: #b5b1aa;
+  --mfds-color-text-tertiary: #918b82;
+  --mfds-color-accent: #d9ef65;
+}
